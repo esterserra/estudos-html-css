@@ -14,15 +14,22 @@
         - é estilizado pelo user agent
 
         atributos comuns:
-        - type: submit, reset, button
-        - autofocus
-        - disabled
-        - name
-        - value
-        - form
+        - type: submit (enviar arquivo)
+                reset (limpar o formulário)
+                button (alguns navegadores entendem como enviar tb)
+        - autofocus (apertar Enter e ir direto. o formulário não precisa estar preenchido)
+        - disabled (desabilitado)
+        - name e value (pesquisar mais**)
+        - form (envia o formulário)
      -->
 
-     <button>Enviar
-     </button>
+     <button type="submit">Enviar</button>
+
+     <form action="">
+        <input type="text" value="Digite aqui">
+        <button type="reset">Limpar</button>
+     </form>
+
+
 </body>
 </html>
