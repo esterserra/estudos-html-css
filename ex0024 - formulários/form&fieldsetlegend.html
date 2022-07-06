@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!-- action = para onde vai ser enviado. method: GET = verbo http (?), aparece as informações na url. POST = não aparece as informações na url. por padrão, sem nenhuma informação. o action vai responder ao link do site e o method vai ser GET-->
+
+    <!-- 
+        o fieldset faz um agrupamento de campos. 
+        atributos:
+        1. disabled - desabilita todos os elementos internos. não serão enviados ao submeter o formulário.
+
+        2. form - o id de um formulário ao qual esse fieldset pertence. não precisa estar dentro do formulário. 
+
+        3. name - nome do grupo.
+
+        <legend> usa com o fieldset. é o nome do agrupamento. primeiro elemento dentro do fieldset.
+     -->
+
+
+    <form action="">
+        <fieldset disabled>
+            <legend>Contato 1</legend>
+            <label for="">Nome</label>
+            <input type="text" name="" id="">
+        </fieldset>
+     </form>
+    
+
+     <form id="contato" action="">
+        <button>Enviar</button>
+     </form>
+     
+     <fieldset form="contato" name="inputs-contact">
+        <legend>Contato 2</legend>
+
+        <label for="">Nome</label>
+        <input type="text" name="" id="">
+    </fieldset>
+
+    
+
+
+</body>
+</html>
