@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*Em HTML é id = em CSS é # (cerquilha) > Só pode um elemento por página
+Em HTML é class = em CSS é . (ponto) > pode vários elementos por página
+Eu posso ter um mesmo ID e CLASS no mesmo elemento, mas o ID sobrepõe. Separa por espaço. Não esquecer das regras de hierarquia.*/
+
+body {
+    background-color: rgba(168, 252, 252, 0.644);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgba(17, 56, 56, 0.918);
+}
+h1#principal {
+    text-align: center;
+    background-color: rgba(17, 56, 56, 0.918);
+    color: white;
+}
+h2 {
+    color:rgb(114, 167, 167);
+}
+.basico {
+    color: rgb(114, 137, 167);
+}
+.intermediario {
+    color: rgb(167, 159, 114);
+}
+.avancado {
+    color: rgb(167, 133, 114);
+}
+.destaque {
+    background-color: rgba(230, 230, 119, 0.616);
+}

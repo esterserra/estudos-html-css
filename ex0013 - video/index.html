@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com Html5</title>
+</head>
+<body>
+    <p>Compatibilidade maior (padrão): mp4, m4v, webm e ogv (menor).</p>
+    <h1>Vídeos hospedados localmente: método 1 (individualmente, mas o ideal é o método 2)</h1>
+    <p>Vídeo hospedado no meu próprio servidor.</p>
+    <video src="midia/meu-video-ogv.ogv" autoplay loop poster="imagens/pexels-tima-miroshnichenko-7991230.png" width="180" controls></video>
+
+    <h1>Método 2 (hospedado localmente):</h1>
+    <video width="180" poster="imagens/pexels-tima-miroshnichenko-7991230.png" autoplay controls>
+        <source src="midia/Meu-Video-1-m4v.m4v" type="video/mp4">
+        <source src="midia/Meu-Video-1-webm.webm" type="video/webm">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video-ogv.ogv" type="video/ogg">
+    </video>
+    <p>Seu computador não tem compatibilidade com reprodução de vídeos.</p>
+    <!--ORGANIZAR POR TAMANHO E POR COMPATIBILIDADE!-->
+
+    <h1>Método 3 (vídeo externo/youtube):</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/Sct5j7Quo54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Método 4 (vídeo externo/vimeo):</h1>
+    <iframe src="https://player.vimeo.com/video/454030600?h=4acc641704&autoplay=1&loop=1&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

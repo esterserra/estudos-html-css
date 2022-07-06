@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador. Começar do G ao P e usar a tag source:media:type. Colocar 50px a mais do que o tamanho da imagem e sempre preencher segundo o modelo. Colocar MAX-WIDTH.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Como reproduzir áudio em html5:</p>
+    <h2>Método 1:</h2>
+    <audio src="midia/yummu - text me records _ leviathe.mp3" controls autoplay></audio>
+    <!--FORMATOS MAIS ACEITOS POR ESSA TAG: MP3 WAV OGG-->
+
+    <h2>Método 2:</h2>
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/yummu - text me records _ leviathe.mp3" type="audio/mpeg">
+        <!--O SITE VAI TENTAR CARREGAR OS ÁUDIOS POR SEQUÊNCIA: EX- PRIMEIRO MP3 PQ TÁ PRIMEIRO E DEPOIS OS SEGUINTES. MP3 É O ÚNICO QUE O MIDIATYPE É DIFERENTE. NAVEGADOR BUSCA COMPATIBILIDADE.EVITAR WAV!!!-->
+        <source src="ester.serra-33.ogg" type="audio/ogg">
+        <!--Exemplo acima de diferentes formatos e midiatype.-->
+        <source src="ester.serra-33.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio.<a href="midia/yummu - text me records _ leviathe.mp3"> Clique aqui para baixar o arquivo MP3</a>.</p>
+        <!--EM PRELOAD EXISTEM OS PARAMETROS: AUTO É O PADRÃO MAS É PERIGOSO (O SITE CARREGA O ARQUIVO INTEIRO), METADATA (SÓ O NOME DO ARQUIVO E INFORMAÇÕES PARCIAIS), NONE (NADA)-->
+    </audio>
+</body>
+</html>

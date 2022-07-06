@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; 
+            /* 320 é a largura máxima de um celular antigo em pé */
+            max-width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt architecto eaque quis, voluptate tempora alias enim soluta dolores ipsam perspiciatis dolorem nesciunt nisi illo vel eius? Praesentium, enim magnam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci tempora eaque a nihil maxime quos ullam magni quibusdam laudantium exercitationem assumenda numquam, praesentium explicabo saepe dolorem esse mollitia temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, similique dolorem tempora nemo est veritatis debitis porro placeat voluptate dolores qui, minus ab magnam error esse quia. Dignissimos, inventore accusantium?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, voluptas dolores quae commodi doloremque, sit explicabo totam quisquam aspernatur itaque quidem quasi laborum? Molestiae labore mollitia voluptate ad sint ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eveniet adipisci sunt sequi veniam dolorem neque ex ut tempore similique molestias unde iusto quidem dignissimos quasi, earum excepturi totam atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quibusdam consequatur provident corrupti dignissimos esse, eligendi vero, exercitationem incidunt fugiat voluptate pariatur, impedit ipsam accusamus iste obcaecati assumenda dolores delectus.</p>
+    </main>
+</body>
+</html>
