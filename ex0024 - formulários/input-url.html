@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL</title>
+</head>
+<body>
+    <!-- 
+        <input type="url"/>
+
+        - espera que o usuário digite uma url
+        - irá validar se o valor digitado é uma url
+
+        # atributos
+
+        - placeholder
+        - readonly / disabled
+        - value
+        - required
+        - minlength / maxlength
+        - size
+        - pattern 
+        - list
+        - spellcheck: habilitar a verificação ortográfica para este input
+     -->
+
+     <datalist id="urlsdata">
+        <option>https://meusite.com.br</option>
+        <option>https://meusite.com.br</option>
+        <option>https://meusite.com.br</option>
+     </datalist>
+     <form action="">
+        <input type="url"
+        placeholder="http://example.com.br"
+        pattern=".*\.com\.br.*"
+        title="Somente domínios .com.br serão aceitos"
+        required
+        list="urlsdata"
+        spellcheck="true">
+        <button type="submit">Enviar</button>
+     </form>
+
+</body>
+</html>
