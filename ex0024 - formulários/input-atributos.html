@@ -10,6 +10,35 @@
     <!-- 
         input atributos comuns:
         
+        type - tipos
+
+        - autocomplete: completar com algo que uso com frequência/sugestão
+        - autofocus: o cursor fica piscando pq dar destaque. só 1 por página
+        - disabled: desabilitado (fica opaco)
+        - readonly: desabilitado (não fica opaco) (quase todos aceitam)
+        - value: o valor 
+        - form: linkar o input com o formulário (quase todos aceitam)
+        - name: pra não ter dificuldade em resgatar os dados
+        - required (quase todos aceitam): quando eu tento enviar o formulário o campo é obrigatório. posso colocar em mais de um campo
+        - placeholder (password, search, tel, text, url) (quase todos aceitam): mensagem ao fundo
      -->
+
+     <input type="text" autocomplete="email">
+
+     <input type="text" autofocus>
+
+     <input type="text" disabled>
+
+     <input type="text" value="qualquer" disabled>
+
+     <input type="text" value="qualquer" readonly>
+
+     <form id="meu-form"></form>
+     <input name="email" type="email" form="meu-form">
+     
+     <input type="text" required>
+
+     <label for="email">Email</label>
+     <input id="email" type="email" placeholder="Digite seu email">
 </body>
 </html>
