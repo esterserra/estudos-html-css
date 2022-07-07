@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    <!-- 
+        <input type="checkbox">
+        - caixas que podem ser marcadas
+        - selecionar um valor para ser enviado
+        - se não selecionado, não será enviado nenhum dado
+
+        atributos
+        - globais
+        - value 
+        * valor que aquele campo contém
+        * se não tiver presente, o padrão é 'on'
+        - checked
+        * para deixar o campo marcado por padrão
+     -->
+
+     <label for="subscribe">Receber notificações</label>
+     <input type="checkbox" name="subscribe" id="subscribe" checked>
+
+     <!-- marcar múltiplos valores: usaremos o atributo 'name' com o mesmo nome para os diversos campos -->
+
+     <fieldset>
+        <legend>Escolha seu interesse</legend>
+        <div>
+            <input type="checkbox" id="codigo" name="interesse" value="codigo" checked>
+            <label for="codigo">Programação</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="musica" name="interesse" value="musica">
+            <label for="musica">Música</label>
+        </div>
+     </fieldset>
+</body>
+</html>

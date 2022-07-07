@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR</title>
+</head>
+<body>
+    <!-- 
+        <input type="color"/>
+        - interface para selecionar cor
+        - color picker
+
+        # atributos
+
+        - valeu: rgb (se inválido, o preto será exibido)
+        - list: o id de uma tag <datalist> que está no mesmo documento
+            * <datalist> irá conter uma lista de valores pré definidos a fim [...]
+            * os valores do <datalist> que não forem compatíveis com o [...]
+
+        não usar o list sem pesquisar quais navegadores aceita
+     -->
+
+     <input type="color" value="#ff0000">
+
+     <datalist id="colorsdata">
+        <option value="#0000ff"></option>
+     </datalist>
+     <input type="color" list="colorsdata">
+    </body>
+</html>
